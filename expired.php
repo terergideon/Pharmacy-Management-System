@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Jane Thiong'o">
+    <meta name="author" content="Terer Gideon">
     <title>Regis Inventory & Monitoring System</title>
     <!--Bootstrap core css-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">

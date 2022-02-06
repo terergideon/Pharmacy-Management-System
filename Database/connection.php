@@ -4,10 +4,10 @@ class connection{
     protected $datab;
     protected $transaction;
     //un  phpmyadmin  pass  phpmyadmin   ip  dbname
-    public function_construct($username="root", $password="", $host="localhost", $dbname="regis", $options=[]){
+    public function_construct($username="root", $password="", $host="localhost", $dbname="bestcare", $options=[]){
         $this->isConn=TRUE;
         try{
-            $this->datab=mew PDO("mysql:host={$host}; dbname={$dbname}; charset=utf8", $username,$password,$options);
+            $this->datab=new PDO("mysql:host={$host}; dbname={$dbname}; charset=utf8", $username,$password,$options);
             $this->datab->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
             $this->transaction = $this->datab;
             $this->datab->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -18,7 +18,7 @@ class connection{
     }//endDefaultConstructor
     //diconnect from db
     public function Disconnect(){
-        $this->datab = NULL;//c;ose connection in PDO
+        $this->datab = NULL;//close connection in PDO
         $this->isConn=FALSE;
     }//endDisconnectFunction
 }//endClassDatabase

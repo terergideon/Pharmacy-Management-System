@@ -52,7 +52,7 @@ class Stock extends Database implements iStock{
         $sql = "update stock
         set stock_qty=?
         where stock_id=?";
-        return $this->updateRow($sql, [$stock_qty,$stock_id]);
+        return $this->updateRow($sql, [$stock_qty, $stock_id]);
 
     }//end of update stockQty
     public function get_stockQty($stock_id){

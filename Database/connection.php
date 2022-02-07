@@ -1,27 +1,15 @@
 <?php
-class connection{
-    protected $isConn;
-    protected $datab;
-    protected $transaction;
-    //un  phpmyadmin  pass  phpmyadmin   ip  dbname
-    public function_construct($username="root", $password="", $host="localhost", $dbname="bestcare", $options=[]){
-        $this->isConn=TRUE;
-        try{
-            $this->datab=new PDO("mysql:host={$host}; dbname={$dbname}; charset=utf8", $username,$password,$options);
-            $this->datab->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-            $this->transaction = $this->datab;
-            $this->datab->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-            //echo 'Connected Successfully!!!';
-        }catch(PDOException $e){
-            throw new Exception($e->getMessage());
-        }
-    }//endDefaultConstructor
-    //diconnect from db
-    public function Disconnect(){
-        $this->datab = NULL;//close connection in PDO
-        $this->isConn=FALSE;
-    }//endDisconnectFunction
-}//endClassDatabase
-//$con = new Connection();//for debugging only
-//echo  ' debug connection';
+//the object oriented way of conection
+$servername = "localhost";
+$username = "";
+$password = "";
+$dbname = "bestcare";
+// Create connection
+$conn = new mysqli(
+);
+// Check connection
+if ($conn->connect_error) {
+ die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
 ?>

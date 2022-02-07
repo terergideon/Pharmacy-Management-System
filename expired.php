@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Terer Gideon">
-    <title>Regis Inventory & Monitoring System</title>
+    <title>BestCare Inventory & Monitoring System</title>
     <!--Bootstrap core css-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">

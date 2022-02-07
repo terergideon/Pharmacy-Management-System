@@ -13,7 +13,7 @@ require_once('include/session.php');
     <meta name="description" content="">
     <meta name="author" content="Terer">
 
-    <title>Best Care & Monitoring System</title>
+    <title>Best Care Inventory & Monitoring System</title>
 
     <!--Bootstrap core css-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">

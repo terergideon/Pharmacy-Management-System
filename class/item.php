@@ -1,7 +1,7 @@
 <?php
 require_once("../Database/database.php");
 require_once("../interface/iItem.php");
-class Item extends Database implements iItem{
+class Item extends Database implements Item{
 public function all_items(){
     $sql = "select * 
     from item i

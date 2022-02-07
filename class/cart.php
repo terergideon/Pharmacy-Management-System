@@ -1,8 +1,8 @@
 <?php
-require_once("../Database/Database.php");
+require_once("../Database/database.php");
 require_once("../interface/iCart.php");
 
-class Cart extends Database implements iCart{
+class Cart extends Database implements iCart {
 
     public function add_toCart ($item_id, $qty, $stock_id, $user_id, $uniqid){
         $sql = "insert into cart (item_id, qty-id,cart_stock_id,user_id,cart_uniqueid) values(?,?,?,?,?);";
